@@ -28,12 +28,8 @@ def main():
                         
                             print(monster.name)
             case 2:
-                monsterName = input()
-                print("Enter monster name: ")
-                if monsterName.strip() == "":
-                    print("Error you must be enter the name")
-                
-                    
-                
-
-        
+                name = str(input("Enter monster name: "))
+                hp = int(input("Enter monster hp: "))
+                id = int(input("Enter monster id: "))
+                dmg = int(input("Enter monster dmg: "))
+                new_monster = Monster(name,hp,dmg,id)
